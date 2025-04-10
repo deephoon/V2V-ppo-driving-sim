@@ -18,7 +18,7 @@
 
 ## 🧱 프로젝트 구조
 
-  V2V/ ├── data/ # SUMO 환경 구성용 .xml 및 차량 궤적 CSV │ └── ... │ ├── logs/ # PPO 학습 로그 저장 디렉토리 │ ├── models/ │ ├── ppo_sumo_agent.zip # 학습된 PPO 모델 파일 │ ├── sumo_env.py # PPO 학습용 gym 환경 정의 │ ├── init.py │ └── scripts/ │ ├── ppo_train_agent.py # PPO 에이전트 학습 코드 │ ├── ppo_test_agent.py # 학습된 모델 테스트 시뮬레이션 │ └── analyze_ttc_plot.py # TTC 시각화 스크립트 │ ├── V2V_avoid_dataprocessing.ipynb # 데이터 전처리 및 SUMO XML 자동 생성 ├── README.md
+V2V/ ├── data/ # SUMO 환경 구성용 .xml 및 차량 궤적 CSV │ └── ... │ ├── logs/ # PPO 학습 로그 저장 디렉토리 │ ├── models/ │ ├── ppo_sumo_agent.zip # 학습된 PPO 모델 파일 │ ├── sumo_env.py # PPO 학습용 gym 환경 정의 │ ├── init.py │ └── scripts/ │ ├── ppo_train_agent.py # PPO 에이전트 학습 코드 │ ├── ppo_test_agent.py # 학습된 모델 테스트 시뮬레이션 │ └── analyze_ttc_plot.py # TTC 시각화 스크립트 │ ├── V2V_avoid_dataprocessing.ipynb # 데이터 전처리 및 SUMO XML 자동 생성 ├── README.md
 
 
 📬 문의
