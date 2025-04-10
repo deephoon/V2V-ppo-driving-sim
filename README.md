@@ -18,54 +18,8 @@
 
 ## 🧱 프로젝트 구조
 
-. ├── data/ │ ├── us101.nod.xml # 노드 정의 파일 │ ├── us101.edg.xml # 도로(엣지) 정의 │ ├── us101.netccfg # 네트워크 생성용 설정 │ ├── us101.sumocfg # SUMO 시뮬레이션 설정 파일 │ ├── vehicle_scenario.rou.xml # 차량 경로 및 정지 이벤트 정의 │ ├── vehicle_info.csv # 차량 정보 요약 │ └── veh_*.csv # 개별 차량 궤적 데이터 │ ├── V2V_avoid_dataprocessing.ipynb # 전처리 및 XML 생성 ├── ttc_analysis.py # TTC 계산 및 시각화 ├── rl_env/ # PPO 학습 환경 (gym.Env) └── README.md
-
-markdown
-복사
-편집
-
----
-
-## ⚙️ 설치 및 실행 환경
-
-- Python ≥ 3.8  
-- [SUMO](https://www.eclipse.org/sumo/) 설치 필요  
-- `traci`, `pandas`, `numpy`, `matplotlib`, `stable-baselines3`
-
-```bash
-pip install pandas numpy matplotlib stable-baselines3
-🚀 실행 방법
-NGSIM 데이터 전처리 및 SUMO 시나리오 생성
-V2V_avoid_dataprocessing.ipynb 실행 → .rou.xml, .nod.xml, .edg.xml 등 생성
-
-SUMO 네트워크 파일 생성
-
-bash
-복사
-편집
-netconvert -c ./data/us101.netccfg
-TTC 기반 위험도 분석 실행
-
-bash
-복사
-편집
-python ttc_analysis.py
-PPO 학습 실행 (추후 추가 예정)
-
-bash
-복사
-편집
-# train_ppo.py (coming soon)
-📊 결과 시각화 예시
-
-평균 TTC와 위험 구간(붉은 음영) 표시
 
 
-TTC < 3 이벤트 밀도 분포 시각화
-
-📝 논문 정보
-본 프로젝트는 KCC 2025 학부생 논문 출품용 연구로 개발되었습니다.
-시뮬레이션 환경, 분석 지표, 학습 프레임워크 등을 포함합니다.
 
 📬 문의
 정재훈 (Jaehoon Jung)
